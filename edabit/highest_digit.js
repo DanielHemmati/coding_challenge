@@ -25,7 +25,19 @@ function randomArray(item, highestNumber) {
     for (var i = 0; i < item; i++) {
         array.push(Math.floor(Math.random() * highestNumber));
     }
+    // make it unique
     return [...new Set(array)];
 }
 
 //---------- other solution ----------
+
+/**
+ * 
+ * @param {number} number 
+ */
+function highestNumber2(number) {
+    // are you kidding me? that's really sneaky
+    return Math.max(...`${number}`);
+}
+
+
