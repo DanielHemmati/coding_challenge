@@ -5,6 +5,6 @@ commit messages are for fun and education purpose only
 
 each folder is the name of the website that contains the coding challenge.
 
-i will put the list of website in here:
-1 - https://edabit.com/
-2 - https://codewar.com/
+i will put the list of website in here:  
+1 - https://edabit.com/  
+2 - https://codewar.com/  
