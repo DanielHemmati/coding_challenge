@@ -6,7 +6,7 @@
  * @param {number} n
  * @returns array of odd number
  */
-// this is my solution 
+// this is my solution
 function evenOddTransform(arr, n) {
     var res = [];
     for (var i = 0; i < arr.length; i++) {
@@ -38,3 +38,14 @@ function randomArray(item, highestNubmer) {
 // console.log(randomArray(6,9));
 
 //---------- solution for others  ----------
+/**
+ * i should read more about jsdoc
+ * @param {array} arr
+ * @param {number} n
+ */
+// it returns [ NaN, NaN, NaN ] idk why
+function evenOddTransform2(arr, n) {
+	return arr.map(x=>(x%2==0)?x-2*n:x+2*n);
+}
+var testArray = [1,2,3]
+console.log(evenOddTransform2(testArray));
