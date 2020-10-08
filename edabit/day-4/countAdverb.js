@@ -26,3 +26,13 @@ let string = 'dainel soly soly soly have '
 // console.log(countAdverbs(string));
 //---------- other solution ----------
 
+/**
+ * 
+ * @param {string} sentence 
+ */
+function countAdverbs2(sentence) {
+    // shit this is so good, now i fall in love wiht regex
+    return sentence.split(/ly\b/).length - 1;
+}
+
+console.log(countAdverbs2(string));
