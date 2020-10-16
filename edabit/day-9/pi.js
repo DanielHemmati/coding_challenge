@@ -9,4 +9,4 @@ function getPi(n) {
 }
 
 // this is next level
-console.log(getPi(50));
+console.log(getPi(20));
