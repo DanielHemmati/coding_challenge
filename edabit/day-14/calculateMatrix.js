@@ -11,6 +11,6 @@ function calcDeterminant(matrix) {
 
 
 console.log(calcDeterminant([
-  [1, 2]😃
+  [1, 2]
   [3, 4]
 ]));
