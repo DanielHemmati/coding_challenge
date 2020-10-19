@@ -24,4 +24,4 @@ function removeNull2(arr) {
     return arr.filter(Boolean)
 }
 
-console.log(removeNull2(["a", null, "b", null]));
+console.log(removeNull2(["a", null, "b", null, false]));
