@@ -10,9 +10,16 @@ function getExtension(arr) {
     })
 }
 
-console.log(getExtension(['daniel.hemmati', 'mina.sabzian']));
-// i want to use regex
-// var string = "daniel.hemmait"
-// var regex = /[^.]+$/g;
-// var res = string.match(regex)
-// console.log(res);
+// console.log(getExtension(['daniel.hemmati', 'mina.sabzian']));
+
+//------------- other solution ------------
+/**
+ * 
+ * @param {Array} arr 
+ */
+function getExtension2(arr) {
+    // return arr.map(item => item.split('.')[1]) 
+    return arr.map(item => item.split('.').pop()) 
+}
+
+console.log(getExtension2(['daniel.hemmati', 'mina.sabzian']));
