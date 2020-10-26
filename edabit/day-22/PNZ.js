@@ -25,11 +25,11 @@ function both(n1, n2) {
 }
 
 
-console.log(both(-1 , 22));
-console.log(both(0 , 22));
-console.log(both(22 , 0));
-console.log(both(22 , 22));
-console.log(both(6 , -2));
+// console.log(both(-1 , 22));
+// console.log(both(0 , 22));
+// console.log(both(22 , 0));
+// console.log(both(22 , 22));
+// console.log(both(6 , -2));
 //------------- other solution ------------
 
 
@@ -38,8 +38,18 @@ function whyIdidntSeeThisLOL(n1, n2) {
     return Math.sign(n1) == Math.sign(n2);
 }
 
-console.log(whyIdidntSeeThisLOL(-1 , 22));
-console.log(whyIdidntSeeThisLOL(0 , 22));
-console.log(whyIdidntSeeThisLOL(22 , 0));
-console.log(whyIdidntSeeThisLOL(22 , 22));
-console.log(whyIdidntSeeThisLOL(6 , -2));
+// console.log(whyIdidntSeeThisLOL(-1 , 22));
+// console.log(whyIdidntSeeThisLOL(0 , 22));
+// console.log(whyIdidntSeeThisLOL(22 , 0));
+// console.log(whyIdidntSeeThisLOL(22 , 22));
+// console.log(whyIdidntSeeThisLOL(6 , -2));
+
+
+function muchBetter(n1, n2) {
+    return !n1 && !n2 || n1 * n2 > 0 
+}
+console.log(muchBetter(-1 , 22));
+console.log(muchBetter(0 , 22));
+console.log(muchBetter(22 , 0));
+console.log(muchBetter(22 , 22));
+console.log(muchBetter(6 , -2));
