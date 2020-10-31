@@ -12,3 +12,13 @@ function squareSum(numbers){
 var arr = [1,2,2]
 // console.log(squareSum(arr));
 
+//------------- other solution ------------
+/**
+ * 
+ * @param {Array} n 
+ */
+// i knew this, but i don't like reduce 
+function squareSum2(n) {
+    return n.reduce(function (sum, n) {
+    }, 0) 
+}
