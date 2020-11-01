@@ -20,4 +20,13 @@ var array = [1, 2, 3];
 // console.log(index(array, 2));
 
 //------------- other solution ------------
-
+// this solution is the awesome 
+/**
+ * 
+ * @param {Array} array 
+ * @param {Number} n 
+ */
+// you can write one-liner or whatever you want
+function index2(array, n) {
+    return array[n] ** n || -1  
+}
