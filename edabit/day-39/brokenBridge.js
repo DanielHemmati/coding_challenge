@@ -12,3 +12,14 @@ function isSafeBridge(str) {
 
 console.log(isSafeBridge('## ###'))
 
+
+//------------- other solution -------------
+
+
+// i like this one also
+function isSafeBridge2(str) {
+    return !str.includes(' ') 
+}
+
+console.log(isSafeBridge2("#####"))
+
