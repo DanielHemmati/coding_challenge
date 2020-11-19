@@ -13,3 +13,7 @@ function product(a,b) {
 // console.log(product()('hemmati'))
 console.log(product(1,2)(1,1)(2,3))
 
+//------------- other solution -------------
+// cool
+const product2 = (a, b) => (c, d) => (e, f) => a * c * e + b * d * f;
+
