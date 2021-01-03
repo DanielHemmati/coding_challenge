@@ -5,7 +5,6 @@ function repeat(item, times) {
   for (let i = 0; i < times; ++i) {
     res.push(item);
   }
-  return res;
 }
 
 console.log(repeat("dani", 2));
