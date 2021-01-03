@@ -8,3 +8,6 @@ function repeat(item, times) {
 }
 
 console.log(repeat("dani", 2));
+// that's the end of the edabit.
+// it's 39$ per month. no way
+// goodbye old friend
