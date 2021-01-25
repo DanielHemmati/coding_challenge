@@ -10,4 +10,18 @@ function highAndLow(numbers) {
   return `${bigOne} ${smallOne}`;
 }
 
-console.log(highAndLow("1 2 3 4"));
+// console.log(highAndLow("1 2 3 4"));
+
+/* ----------------------------- other solution ----------------------------- */
+
+/**
+ *
+ * @param {String} numbers
+ */
+function second(numbers) {
+  numbers = numbers.split(" ");
+  console.log(typeof `${Math.max(...numbers)}`);
+  console.log(`${Math.max(...numbers)}`);
+}
+
+console.log(second("1 2 3 4 5"));
