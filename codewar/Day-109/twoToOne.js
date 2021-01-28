@@ -22,4 +22,8 @@ let res = [...new Set(a)].join("");
 const input1 = "aretheyhere";
 const input2 = "yestheyarehere";
 
-console.log(longest(input1, input2));
+// console.log(longest(input1, input2));
+
+/* ----------------------------- other solution ----------------------------- */
+// fuck! :|
+const longest = (s1, s2) => [...new Set(s1 + s2)].sort().join("");
