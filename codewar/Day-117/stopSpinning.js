@@ -21,4 +21,4 @@ function spinWords(str) {
 const reverseWord = (word) => [...word].reverse().join("");
 const spingWords2 = (string) => string.replace(/\w{5,}/g, reverseWord);
 
-console.log(spingWords2("hello fellow warriors "));
+console.log(spingWords2("hello fellow warriors"));
