@@ -6,6 +6,7 @@
 function findOutlier(integers) {
   var oddNumber = 0;
   var evenNumber = 0;
+
   for (let i = 0; i < integers.length; ++i) {
     if (integers[i] % 2 === 0) {
       evenNumber++;
@@ -13,6 +14,7 @@ function findOutlier(integers) {
       oddNumber++;
     }
   }
+
   if (evenNumber > oddNumber) {
     return integers[integers.findIndex((item) => item % 2 !== 0)];
   } else if (oddNumber > evenNumber) {
