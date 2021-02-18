@@ -100,7 +100,12 @@ const secondAttempt = function (morseCode) {
  * @param {String} morseCode
  */
 function thirdSolution(morseCode) {
-  return morseCode.trim().split(/   |  /);
+  // this solution is next level, i won't forget that split tricks
+  return morseCode
+    .trim()
+    .split(/  | /)
+    .map((code) => MORSE_CODE[code] || " ")
+    .join("");
 }
 
 console.log(thirdSolution(".... . -.--   .--- ..- -.. ."));
