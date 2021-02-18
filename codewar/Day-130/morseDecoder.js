@@ -76,7 +76,7 @@ const decodeMorse = function (morseCode) {
   return decodeMorse.trim();
 };
 
-console.log(decodeMorse(".... . -.--   .--- ..- -.. ."));
+// console.log(decodeMorse(".... . -.--   .--- ..- -.. ."));
 /**
  *
  * @param {String} morseCode
@@ -91,4 +91,16 @@ const secondAttempt = function (morseCode) {
   return morseCode.trim().split("   ").map(decodeMorseWord).join(" ");
 };
 
-console.log(secondAttempt(".... . -.--   .--- ..- -.. ."));
+// console.log(secondAttempt(".... . -.--   .--- ..- -.. ."));
+
+/* ----------------------------  other slutions --------------------------- */
+
+/**
+ *
+ * @param {String} morseCode
+ */
+function thirdSolution(morseCode) {
+  return morseCode.trim().split(/   |  /);
+}
+
+console.log(thirdSolution(".... . -.--   .--- ..- -.. ."));
