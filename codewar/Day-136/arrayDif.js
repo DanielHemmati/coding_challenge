@@ -21,8 +21,11 @@ function arrayDiff(a, b) {
  * @param {Array} b
  */
 function second(a, b) {
+  let res = "test";
+  console.log(res.length);
   return a.filter((item) => !b.includes(item));
 }
+/* ------------------------------------ } ----------------------------------- */
 
 console.log(second([], [3]));
 console.log(second([1, 8, 2], []));
