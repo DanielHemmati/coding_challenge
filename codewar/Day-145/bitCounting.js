@@ -20,4 +20,13 @@ const test = 123;
 // console.log(test.toString(2));
 // console.log((test >>> 0).toString(2));
 
-console.log(countBits(test));
+// console.log(countBits(test));
+
+/* ----------------------------- other solution ----------------------------- */
+/**
+ *
+ * @param {Number} n
+ */
+function countBits2(n) {
+  return n.toString(2).split("0").join("").length;
+}
