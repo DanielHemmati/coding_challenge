@@ -42,4 +42,24 @@ function secondSolution(arr) {
   );
 }
 
-console.log(secondSolution(a));
+// console.log(secondSolution(a));
+
+/* ----------------------------- other solution ----------------------------- */
+
+/**
+ *
+ * @param {Array} arr
+ */
+// this solution is much better
+function thirdSolution(arr) {
+  let left = 0;
+  let right = arr.reduce((a, b) => a + b, 0);
+  for (let i = 0; i < arr.length; i++) {
+    right -= arr[i];
+    if (right === left) return i;
+    left += arr[i];
+  }
+  return -1;
+}
+
+console.log(thirdSolution(a));
