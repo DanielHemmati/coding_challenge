@@ -6,5 +6,3 @@ String.prototype.toJadenCase = function () {
 };
 
 console.log("daniel hemmat".toJadenCase());
-
-function test(params) {}
