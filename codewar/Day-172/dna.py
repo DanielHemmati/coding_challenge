@@ -25,4 +25,7 @@ def second(dna: str):
     return "".join([pair[char] for char in dna])
 
 
+# i fucking love programming,
+# i love new ideas
+# asking hard question, tryihng to understand theme
 print(second(a))
