@@ -1,10 +1,18 @@
 import "dart:io";
+import 'dart:math';
 
-// read this two link about null
-bool isEmpty(String string) => string.length == 0;
+class Coffee {
+  late String _temperature;
 
-void main() {
-  print("enter your name");
-  String? name = stdin.readLineSync();
-  print("hello $name");
+  void heat() {
+    _temperature = 'hot';
+  }
+
+  void chill() {
+    _temperature = 'iced';
+  }
+
+  String serve() => _temperature + ' coffee';
 }
+
+void main() {}
