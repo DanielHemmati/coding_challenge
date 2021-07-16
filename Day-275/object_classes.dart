@@ -11,4 +11,8 @@ void main() {
 class Human {
   double height = 15;
   int age = 0;
+  Human(double h, int a) {
+    height = h;
+    age = a;
+  }
 }
