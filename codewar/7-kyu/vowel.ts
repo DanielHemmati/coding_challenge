@@ -11,13 +11,11 @@ class Kata {
   }
 
   static sl1(str: string): number {
-    let regex = /[aeiou]/g;
     return [...str].filter(char => "aeiou".includes(char)).length;
   }
 
   // i like this one
   static sl2(str: string): number {
-    console.log(str.replace(/[^aeiou]/gi, ''));
     return str.replace(/[^aeiou]/gi, '').length;
   }
 }
