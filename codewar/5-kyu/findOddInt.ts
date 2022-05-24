@@ -1,3 +1,4 @@
+// https://www.codewars.com/kata/54da5a58ea159efa38000836/train/typescript
 export const findOdd = (xs: number[]): number => {
   let count = {} as typeof xs;
 
