@@ -1,2 +1,11 @@
-*.exe
+# ignore all 
+*
+
+# Unignore all with extensions
+!*.*
+# unignore all dirs
+!*/
+
+!Makefile
+
 
