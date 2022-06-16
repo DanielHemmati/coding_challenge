@@ -3,12 +3,14 @@
 #include <stdlib.h>
 #include <string.h>
 
+const char* number_to_string(int number) {
+  char* s;
+  asprintf(&s, "%d", number);
+  return s;
+}
 
+// saw the solution
 int main() {
-  // sprintf("a", "%d", 43);
-  printf("--------------------\n");
-  char str[255];
-
-  printf("%s\n", str);
+  number_to_string(22);
   return 0;
 }
