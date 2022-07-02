@@ -27,4 +27,6 @@ print(pig_it(a))
 def second(text):
     lst = text.split()
     return ' '.join([word[1:] + word[:1] + 'ay' if word.isalpha() else word for word in lst])
+
+
 """ this is how i did it at first, i used isalpha() but i didn't realize that i have add else too """
