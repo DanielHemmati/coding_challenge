@@ -28,7 +28,7 @@ split_strings[len(split_strings) - 1] += "_"
 # ------------------------------ other solutoin ------------------------------ #
 # with regex
 import re
-def withRegex(string: str) -> list[str]:
+def withRegex(string: str) -> "list[str]":
     return re.findall(".{2}", string + "_")
 b = "abcd"
 print(withRegex(b))
