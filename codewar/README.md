@@ -1,2 +1,3 @@
-for next time: 
-✅ https://www.codewars.com/kata/515de9ae9dcfc28eb6000001
+# solve again
+
+1. why i couldn't solve this [adding array](https://www.codewars.com/kata/59778cb1b061e877c50000cc/solutions)  
