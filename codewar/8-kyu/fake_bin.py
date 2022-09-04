@@ -11,3 +11,8 @@ print(fake_bin(a))
 def second(x):
     # i don't trust comparing string with number, generally
     return ''.join('0' if c < '5' else '1' for c in x)
+
+
+a = "test"
+list_st = a.split()
+print(list_st[0])
