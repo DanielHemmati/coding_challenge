@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func multiply(a int, b int) int {
+	func multiply(a int, b int) int {
 	return a * b
 }
 
