@@ -7,4 +7,4 @@ function remove_char(string $s): string
     return substr($s, 1, -1);
 }
 
-print_r(substr("Daniel", 1));
+print_r(substr("Daniel", 1, -1));
