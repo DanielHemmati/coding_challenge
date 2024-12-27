@@ -17,3 +17,12 @@ $b = [4, 5, 6];
 
 //------------- second solution -------------
 
+function second(array $a, array $b): float{
+    $result = array_map(function ($item1, $item2) {
+        return pow(abs($item1 - $item2), 2);
+    }, $a, $b);
+
+    return array_sum($result) / count($result);
+}
+
+print_r(second($a, $b));
