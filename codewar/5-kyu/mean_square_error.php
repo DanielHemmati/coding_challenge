@@ -26,3 +26,5 @@ function second(array $a, array $b): float{
 }
 
 print_r(second($a, $b));
+
+// 0#5G&%asfa21Vuv89HaI
