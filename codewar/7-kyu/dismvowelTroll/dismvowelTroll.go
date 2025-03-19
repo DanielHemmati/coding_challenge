@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"regexp"
 	"strings"
 )
@@ -37,4 +38,8 @@ func main() {
 	// fmt.Println(disemvowel("This website is for losers LOL!"))
 	// fmt.Println(usingRegex("This website is for losers LOL!"))
 	fmt.Println(usingStrings("This website is for losers LOL!"))
+}
+
+func test(x int) int {
+	return -int(math.Abs(float64(x)))
 }
