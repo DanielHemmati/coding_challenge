@@ -1,0 +1,9 @@
+include:
+  - "**/*.rb"
+exclude:
+  - "log/**/*"
+  - "tmp/**/*"
+require: []
+domains: []
+reporters: []
+plugins: []
