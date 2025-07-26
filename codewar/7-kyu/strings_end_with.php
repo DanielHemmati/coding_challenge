@@ -9,4 +9,6 @@ function solution(string $str, string $ending): bool
 
 $haystack = 'abc';
 $needle = 'bc';
-var_dump(solution($haystack, $needle));
+// var_dump(solution($haystack, $needle));
+
+var_dump(var_export(false, true));
