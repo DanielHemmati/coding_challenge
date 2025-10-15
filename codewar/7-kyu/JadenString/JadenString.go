@@ -22,3 +22,5 @@ func main() {
 	text := "daniel hemmati is a bad guy"
 	fmt.Println(ToJadenString(text))
 }
+
+// other solutions
