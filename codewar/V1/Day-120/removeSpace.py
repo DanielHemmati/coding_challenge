@@ -11,11 +11,12 @@ def no_space(x):
 
 # let's see if there an easier way
 
+
 def no_space2(x):
-    return x.replace(' ', "")
+    return x.replace(" ", "")
 
 
 # print(no_space2('daniel hemmati hello theree'))
 
 song = "cold, cold, cold, cold heart"
-print(song.replace("cold", 'hard', 2))
+print(song.replace("cold", "hard", 2))

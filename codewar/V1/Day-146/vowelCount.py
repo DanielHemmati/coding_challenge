@@ -1,5 +1,3 @@
-
-
 # a = "daniel"
 # count = 0
 # for char in a.lower():
@@ -8,8 +6,9 @@
 
 # print(count)
 
+
 def test(inputStr):
-    return sum(inputStr.count(char) for char in ['a', 'e', 'i', 'o', 'u'])
+    return sum(inputStr.count(char) for char in ["a", "e", "i", "o", "u"])
 
 
 a = "daniel"

@@ -1,5 +1,6 @@
 # https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/python
 
+
 def duplicate_count(text: str) -> int:
     obj = {}
     text = text.lower()
@@ -16,16 +17,18 @@ def duplicate_count(text: str) -> int:
 
     return 0 if len(hold_duplicate) == 0 else len(hold_duplicate)
 
+
 a = "abcde"
 b = "abcdeaa"
 
 # print(duplicate_count(b))
 
+
 # --------------------------------- other sol -------------------------------- #
-# i always forget this count method, this is really nice 
-def second(text: str) ->int:
+# i always forget this count method, this is really nice
+def second(text: str) -> int:
     count = 0
     for char in set(text.lower()):
-        if text.lower().count(char) >1:
+        if text.lower().count(char) > 1:
             count += 1
     return count

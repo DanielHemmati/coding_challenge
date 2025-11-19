@@ -1,9 +1,3 @@
-
-
-import re
-from traceback import print_tb
-
-
 def digital_root(n):
     if len(str(n)) == 1:
         return n
@@ -25,8 +19,9 @@ def second(n: int) -> int:
 
 # print(second(a))
 
+
 def third(n: int) -> int:
-    res = lambda n: n and (n-1) % 9 + 1
+    res = lambda n: n and (n - 1) % 9 + 1
     return res
 
 
@@ -34,4 +29,3 @@ print(third(a))
 
 digital_root2 = lambda n: n and (n - 1) % 9 + 1
 print(digital_root2(a))
-

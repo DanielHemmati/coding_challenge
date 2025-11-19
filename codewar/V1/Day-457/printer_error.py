@@ -2,7 +2,6 @@
 
 # this is hard for me 🥴
 from re import sub
-import re
 
 
 def printer_error(s):
@@ -21,9 +20,10 @@ def printer_error(s):
 # print(len("mmmmmmmmmmmmmmmmmmmxyz"))
 
 
-#this is way more elegant 
+# this is way more elegant
 def printer_error2(s):
     return "{}/{}".format(len(sub("[a-m]", "", s)), len(s))
 
+
 # love it
-print(printer_error2('aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz'))
+print(printer_error2("aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz"))

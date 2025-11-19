@@ -1,6 +1,5 @@
-
-import string
 import re
+import string
 
 
 def is_pangram(s):
@@ -13,12 +12,14 @@ pangram = "The quick, brown fox jumps over the lazy dog!"
 # print(set(a.lower()))
 print(is_pangram(pangram))
 
+
 # --------------------------------- learning --------------------------------- #
 def foo(s: str):
     s = s.lower()
     for char in set(string.ascii_lowercase):
         if char not in s:
-            return False 
-    return True 
+            return False
+    return True
+
 
 print(foo(pangram))

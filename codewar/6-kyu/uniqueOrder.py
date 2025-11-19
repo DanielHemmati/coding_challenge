@@ -4,7 +4,7 @@
 def unique_in_order(string: str) -> str:
     res = []
     for i in range(0, len(string) - 1):
-        if string[i-1] != string[i]:
+        if string[i - 1] != string[i]:
             res.append(string[i])
 
     return res
@@ -14,7 +14,8 @@ set_example = "AAAABBBCCDAABBB"
 # print(unique_in_order(set_example))
 
 
-# solution 
+# solution
+
 
 def second(string: str) -> str:
     newList = []
@@ -36,18 +37,20 @@ def third(string: str) -> str:
 
     return res
 
+
 # print(third(set_example))
 
 
 # i really like this
 # https://www.youtube.com/watch?v=jijYnDqhY9w => watch this for more info
 from itertools import groupby
+
+
 def fourth(string: str) -> str:
     res = []
-    for key, _ in groupby(string): 
+    for key, _ in groupby(string):
         res.append(key)
     print(res)
-
 
 
 # print(fourth(set_example))
@@ -60,9 +63,9 @@ def fifth(string: str) -> str:
     for char in string:
         if char != prev:
             result.append(char)
-            prev = char 
+            prev = char
 
     return result
 
-print(fifth(set_example))
 
+print(fifth(set_example))

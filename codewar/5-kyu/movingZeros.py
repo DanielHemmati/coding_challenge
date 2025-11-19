@@ -7,5 +7,5 @@ def move_zeros(array):
     return removeZero + zeroList
 
 
-a =  [1, 2, 0, 1, 0, 1, 0, 3, 0, 1]
+a = [1, 2, 0, 1, 0, 1, 0, 3, 0, 1]
 print(move_zeros(a))

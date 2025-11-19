@@ -1,4 +1,3 @@
-
 import string
 
 
@@ -7,6 +6,7 @@ def to_jaden_case(a):
 
 
 # print(to_jaden_case('daniel hemmati'))
+
 
 def second(string):
     """[summary]

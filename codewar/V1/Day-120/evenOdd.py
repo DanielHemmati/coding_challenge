@@ -1,5 +1,3 @@
-
-
 def even_or_odd(number):
     """we have one number decide is it odd or even
 
@@ -16,6 +14,7 @@ def even_or_odd(number):
 # print(even_or_odd(22))
 
 # ------------------------------ other solution ------------------------------ #
+
 
 def second(number):
     # return "Even" if number % 2 == 0 else "Odd"

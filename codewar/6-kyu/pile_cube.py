@@ -1,6 +1,5 @@
-
 # i don't understand the question
-# now i see the solution i got it 
+# now i see the solution i got it
 
 # https://pythontutor.com/visualize.html#mode=display
 # okay i gotit
@@ -12,7 +11,7 @@ def find_nb(m):
         if total == m:
             return n
         n += 1
-    
+
     return -1
 
 

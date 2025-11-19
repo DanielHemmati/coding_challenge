@@ -1,5 +1,6 @@
 # https://www.codewars.com/kata/578aa45ee9fd15ff4600090d/train/python
 
+
 def sort_array(source_array: list) -> list:
     odd_num = sorted([x for x in source_array if x % 2 != 0])
     c = 0

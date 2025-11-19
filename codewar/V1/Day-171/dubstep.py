@@ -2,7 +2,7 @@ import re
 
 
 def sub_step(song: str):
-    return re.sub(r'WUB', " ", song).strip()
+    return re.sub(r"WUB", " ", song).strip()
 
 
 a = "WUBAWUBBWUBCWUB"

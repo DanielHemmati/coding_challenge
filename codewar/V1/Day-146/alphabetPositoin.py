@@ -1,5 +1,3 @@
-
-
 # i saw the solution, still i have problem with python
 def alphabet_position(text):
     res = ""

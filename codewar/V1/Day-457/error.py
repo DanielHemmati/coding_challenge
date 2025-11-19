@@ -1,4 +1,3 @@
-
 def open_or_senior(data):
     res = []
     print(data)
@@ -17,10 +16,9 @@ def open_or_senior(data):
 a = [(59, 12), (55, -3), (12, -2), (12, 12)]
 b = [(45, 12), (55, 21), (19, -2), (104, 20)]
 # for age, handicap in dict(a).items():
-    # for a it just loop for three times WHAT THE HELL
-    # print(f"for b age={age} and handicap={handicap}")
+# for a it just loop for three times WHAT THE HELL
+# print(f"for b age={age} and handicap={handicap}")
 
 # lol this is way better
-for age, handicap in a: 
+for age, handicap in a:
     print(f"for b age={age} and handicap={handicap}")
-

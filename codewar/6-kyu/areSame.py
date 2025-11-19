@@ -17,11 +17,12 @@ a = [121, 144, 19, 161, 19, 144, 19, 11]
 b = [121, 144, 19, 161, 19, 144, 19, 11]
 print(a == b)
 
+
 # solution
 # yeah it seems like you can use try/catch a lot in codewar
 def second(array1, array2):
     try:
-        return sorted([i ** 2 for i in array1]) == sorted(array2)
+        return sorted([i**2 for i in array1]) == sorted(array2)
     except:
         return False
 

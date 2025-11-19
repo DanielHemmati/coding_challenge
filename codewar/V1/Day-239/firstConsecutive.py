@@ -1,4 +1,3 @@
-
 def first_non_consecutive(arr: list):
     for index, value in enumerate(arr, start=arr[0]):
         if index != value:
@@ -14,7 +13,7 @@ d = [1, 2, 3, 4, 6, 7, 8]
 
 def second(arr: list):
     for i in range(1, len(arr)):
-        if arr[i] - arr[i-1] > 1:
+        if arr[i] - arr[i - 1] > 1:
             return arr[i]
     return None
 

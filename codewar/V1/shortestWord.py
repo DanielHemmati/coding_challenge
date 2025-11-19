@@ -1,4 +1,3 @@
-
 # https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9/train/python
 def find_short(s):
     # your code here
@@ -18,6 +17,7 @@ def second_solution(s):
 # print(list(len(x) for x in a.split()))
 
 # print(second_solution(a))
+
 
 def third_solution(s):
     return min(map(len, s.split()))

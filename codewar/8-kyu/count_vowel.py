@@ -20,10 +20,14 @@ def first(s: str) -> int:
     # return [1 for char in s if s in "aeiou"]
     return sum(1 for char in s if s in "aeiou")
 
+
 # print(first(a))
 
 import re
-def second(s:str) -> int:
+
+
+def second(s: str) -> int:
     return len(re.findall("[aeiou]", s, re.IGNORECASE))
+
 
 print(second(a))

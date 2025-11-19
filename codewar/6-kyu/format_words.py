@@ -18,15 +18,24 @@ def format_words(words):
 
     res = ""
     for index in range(len(clean_list) - 2):
-        res += clean_list[index] + ', '
+        res += clean_list[index] + ", "
 
-    return res + clean_list[len(clean_list) - 2] + " and " + clean_list[len(clean_list) - 1]
+    return (
+        res
+        + clean_list[len(clean_list) - 2]
+        + " and "
+        + clean_list[len(clean_list) - 1]
+    )
 
 
 # shortest one this is amazing
 def shortOne(words: list[str]) -> str:
-    return ", ".join(word for word in words if word)[::-1].replace(",", "dna ", 1)[::-1] if words else ""
+    return (
+        ", ".join(word for word in words if word)[::-1].replace(",", "dna ", 1)[::-1]
+        if words
+        else ""
+    )
 
 
-a = ['one', 'two', 'three', 'four', "", None]
+a = ["one", "two", "three", "four", "", None]
 print(shortOne(a))

@@ -1,9 +1,3 @@
-from functools import reduce
-from operator import add
-from operator import mul
-from math import prod
-
-
 def grow(arr: list) -> int:
     res = 1
     for i in arr:
@@ -15,6 +9,7 @@ def grow(arr: list) -> int:
 
 # ------------------------------ other solution ------------------------------ #
 # python also have reduce, let's go
+
 
 def my_add(a: int, b: int) -> int:
     return a + b

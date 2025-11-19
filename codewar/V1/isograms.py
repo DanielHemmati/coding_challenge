@@ -1,5 +1,3 @@
-
-
 def is_isogram(string):
     return len(set(list(string.lower()))) == len(string)
     # this is also true
@@ -7,6 +5,7 @@ def is_isogram(string):
 
 
 # print(is_isogram("aba"))
+
 
 # print(list("aMa".lower()))
 def second(string):

@@ -5,13 +5,13 @@ from collections import Counter
 
 
 def duplicate_encode(word: str) -> str:
-    res = ''
+    res = ""
     chars_count = {}
 
     mini_word = word.lower()
 
     if len(mini_word) == len(set(mini_word)):
-        res += '(' * len(word)
+        res += "(" * len(word)
         return res
 
     for ch in mini_word:
@@ -19,14 +19,14 @@ def duplicate_encode(word: str) -> str:
 
     for ch in mini_word:
         if chars_count[ch] == 1:
-            res += '('
+            res += "("
         else:
-            res += ')'
+            res += ")"
 
     return res
 
 
-a = 'diin'
+a = "diin"
 # print(duplicate_encode(a))
 
 # ----------------- others -----------------
@@ -35,12 +35,13 @@ a = 'diin'
 
 
 def second(word: str) -> str:
-    return "".join(['(' if word.lower().count(c) == 1 else ')' for c in word.lower()])
+    return "".join(["(" if word.lower().count(c) == 1 else ")" for c in word.lower()])
 
 
 def third(word: str) -> str:
     word = word.lower()
     counter = Counter(word)
-    return ''.join(('(' if counter[c] == 1 else ')') for c in word)
+    return "".join(("(" if counter[c] == 1 else ")") for c in word)
+
 
 print(third(a))

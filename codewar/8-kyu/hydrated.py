@@ -2,7 +2,8 @@
 import math
 
 
-def litres(time: int) ->int:
+def litres(time: int) -> int:
     return math.floor(time * 0.5)
+
 
 print(litres(3))

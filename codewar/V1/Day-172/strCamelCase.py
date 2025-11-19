@@ -19,10 +19,12 @@ def uppercase(string):
 
 
 def camel(string: str):
-    string = re.sub(r"^[\-_\.]", '', str(lowercase(string)))
+    string = re.sub(r"^[\-_\.]", "", str(lowercase(string)))
     if not string:
         return string
-    return lowercase(string[0]) + re.sub(r"[\-_\.\s]([a-z])", lambda matched: uppercase(matched.group(1)), string[1:])
+    return lowercase(string[0]) + re.sub(
+        r"[\-_\.\s]([a-z])", lambda matched: uppercase(matched.group(1)), string[1:]
+    )
 
 
 a = "the_stealth_warrior"
@@ -43,7 +45,7 @@ def camel(txt: str):
 
 # print(camel(s))
 def camel(string: str):
-    removed = string.replace("-", ' ').replace("_", " ").split()
+    removed = string.replace("-", " ").replace("_", " ").split()
     if len(removed) == 0:
         return ""
     return removed[0] + "".join(char.capitalize() for char in removed[1:])

@@ -1,4 +1,3 @@
-
 # that's the most easiest solution
 def findMissing(arr):
     return 45 - sum(arr)

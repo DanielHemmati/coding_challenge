@@ -1,4 +1,3 @@
-
 import math
 
 
@@ -16,8 +15,9 @@ def find_next_square(sq):
 
 # -------------------------------- better one -------------------------------- #
 
+
 def second(sq):
-    return (math.sqrt(sq)+1)**2 if math.sqrt(sq) % 1 == 0 else -1
+    return (math.sqrt(sq) + 1) ** 2 if math.sqrt(sq) % 1 == 0 else -1
 
 
 print(second(121))

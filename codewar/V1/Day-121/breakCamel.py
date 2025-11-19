@@ -13,11 +13,12 @@ def solution(s):
 
 # ------------------------------- with for loop ------------------------------ #
 
+
 def solution2(s):
     res = ""
     letter = [char for char in s]
     for i in range(len(letter)):
-        if (letter[i] == letter[i].upper()):
+        if letter[i] == letter[i].upper():
             res += " " + letter[i]
         else:
             res += letter[i]

@@ -4,7 +4,6 @@
 # i didn't solved it, but i could do it with numpy LOOL
 
 
-
 def ccw(matrix):
     res = []
     for row in zip(*map(reversed, matrix)):
@@ -13,15 +12,14 @@ def ccw(matrix):
     return res
     # return [list(row) for row in zip(*map(reversed, matrix))]
 
+
 def rotated(matrix, times):
     for _ in range(times % 4):
         matrix = ccw(matrix)
     return matrix
 
 
-matrix = [[1, 2, 3],
-          [4, 5, 6],
-          [7, 8, 9]]
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
 # i like zip, it's really useful
 res = zip(*map(reversed, matrix))

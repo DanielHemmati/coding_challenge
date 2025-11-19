@@ -1,9 +1,11 @@
 # https://www.codewars.com/kata/5656b6906de340bd1b0000ac
 
+
 def longest(a1: str, a2: str) -> str:
     pass
 
-a = set('xyaabbbccccdefww')
-b = set('xxxxyyyyabklmopq')
+
+a = set("xyaabbbccccdefww")
+b = set("xxxxyyyyabklmopq")
 c = "".join(sorted(a.union(b)))
 print(c)

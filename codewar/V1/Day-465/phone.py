@@ -1,5 +1,5 @@
 # https://www.codewars.com/kata/525f50e3b73515a6db000b83/train/python
-import re
+
 
 def create_phone_number(n):
     array_of_str = map(lambda x: str(x), n)

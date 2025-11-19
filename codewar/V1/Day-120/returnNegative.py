@@ -4,6 +4,7 @@
 # for now i solve simple problem for python
 # for practice
 
+
 def make_negative(number):
     return number if number < 0 else -number
 

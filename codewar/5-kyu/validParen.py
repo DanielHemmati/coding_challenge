@@ -1,6 +1,6 @@
 # https://www.codewars.com/kata/52774a314c2333f0a7000688/train/python
-from distutils import core
 import re
+
 
 # learnt really well from JS
 def valid_parentheses(string: str):
@@ -28,7 +28,7 @@ wrong = "()))"
 def second(paren: str) -> bool:
     try:
         re.compile(paren)
-    except: 
+    except:
         return False
 
     return True
@@ -36,11 +36,13 @@ def second(paren: str) -> bool:
 
 # print(re.compile(wrong))
 
+
 def third(paren: str) -> bool:
     # paren = "".join(char for char in paren if char in "()")
     while "()" in paren:
         paren = paren.replace("()", "")
-    
+
     return not paren
+
 
 print(third(wrong))

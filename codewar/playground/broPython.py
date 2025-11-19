@@ -1,4 +1,3 @@
-
 txt = "my"
 
 x = txt.rjust(10, "Y")

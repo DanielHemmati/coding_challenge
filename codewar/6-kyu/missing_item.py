@@ -1,7 +1,3 @@
-
-from cmath import log
-
-
 def find_missing(seq: list) -> int:
     sumList = (len(seq) + 1) * (seq[0] + seq[len(seq) - 1]) / 2
     return sumList - sum(seq)

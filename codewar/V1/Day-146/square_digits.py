@@ -5,7 +5,7 @@ def square_digits(num):
     str_n = list(str(num))
     for number in str_n:
         # print(int(number) ** 2, end="")
-        res += int(number)**2 + ""
+        res += int(number) ** 2 + ""
     return res
 
 

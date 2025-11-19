@@ -1,6 +1,5 @@
-
 def abb_name(s: str) -> str:
-    """output with the first char capital 
+    """output with the first char capital
 
     Args:
         s (str): string

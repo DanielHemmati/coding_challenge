@@ -8,7 +8,7 @@ def find_it(seq: list) -> int:
         return seq[0]
     res = {}
     for item in seq:
-        if not item in res:
+        if item not in res:
             res[item] = 1
         else:
             res[item] = res[item] + 1
@@ -32,18 +32,21 @@ def second(seq: list) -> int:
         if seq.count(item) % 2 != 0:
             return item
 
+
 # print(second(a))
 
 
 def third(seq: list) -> int:
     return [item for item in seq if seq.count(item) % 2 != 0][0]
 
+
 # print(third(a))
+
 
 # this is really interesting b/c, if there is odd number of item in a list
 # always one of them will remain, but if there is even number all of them
 # will be remove
-def fourth(seq: list) ->int:
+def fourth(seq: list) -> int:
     nums = set()
     for num in seq:
         if num in nums:
@@ -53,5 +56,6 @@ def fourth(seq: list) ->int:
     print(nums)
     return nums.pop()
 
-b = [1,1,1,2,2]
+
+b = [1, 1, 1, 2, 2]
 print(fourth(b))

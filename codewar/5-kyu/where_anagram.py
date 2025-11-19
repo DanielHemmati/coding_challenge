@@ -9,8 +9,8 @@ def anagrams(word: str, list_of_words: str) -> "list[str]":
     return res
 
 
-a = 'abba'
-b = ['aabb', 'abcd', 'bbaa', 'dada']
+a = "abba"
+b = ["aabb", "abcd", "bbaa", "dada"]
 # print(anagrams(a, b))
 
 # ------------------------------ other solution ------------------------------ #
@@ -23,9 +23,9 @@ def second(word, words):
 # print(second(a, b))
 
 from collections import Counter
+
 test = Counter(a)
 
 c = "bbaa"
-another= Counter(c)
+another = Counter(c)
 print(another == test)
-

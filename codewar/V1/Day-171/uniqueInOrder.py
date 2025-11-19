@@ -4,7 +4,7 @@ def unique_in_order(iter: str):
     res = []
     list_iter = [char for char in iter]
     for index, value in enumerate(list_iter):
-        if value != list_iter[index+1]:
+        if value != list_iter[index + 1]:
             res.append(value)
 
     return res

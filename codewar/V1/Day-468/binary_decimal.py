@@ -4,7 +4,8 @@
 def binary_array_to_number(arr):
     return int("".join([str(x) for x in arr]), 2)
 
-a = [1,1,1,1]
+
+a = [1, 1, 1, 1]
 # b = [str(x) for x in a]
 # res = "".join(b)
 # # print(type(res))

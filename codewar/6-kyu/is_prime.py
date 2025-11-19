@@ -5,15 +5,16 @@ from math import sqrt
 
 def is_prime(num: int) -> bool:
     if num <= 0:
-        return False 
-    
+        return False
+
     # print(int(sqrt(7)))
-    for i in range(2, int(sqrt(num))+1):
+    for i in range(2, int(sqrt(num)) + 1):
         print(i)
         if num % i == 0:
-            return False 
+            return False
 
     return num > 1
+
 
 a = 8
 print(is_prime(a))

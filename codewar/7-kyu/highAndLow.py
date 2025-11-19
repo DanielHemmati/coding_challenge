@@ -1,9 +1,6 @@
 # https://www.codewars.com/kata/554b4ac871d6813a03000035/train/python
 
 
-import numbers
-
-
 def high_and_low(numbers: str) -> str:
     number_string = numbers.split()
     list_number = []
@@ -26,7 +23,7 @@ print(high_and_low(a))
 def second(n: str) -> str:
     # i add that reversed part
     nums = sorted(n.split(), key=int, reverse=True)
-    return '{} {}'.format(nums[0], nums[-1])
+    return "{} {}".format(nums[0], nums[-1])
 
 
 print(second(a))

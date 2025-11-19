@@ -1,6 +1,5 @@
-
 def hello_range(arr, n):
-    return arr[:n+1]
+    return arr[: n + 1]
 
 
 array = [1, 2, 3, 4, 5, 6]

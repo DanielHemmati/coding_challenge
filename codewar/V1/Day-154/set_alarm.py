@@ -2,6 +2,7 @@
 
 # practicing python easy problem
 
+
 def set_alarm(employed, vacation):
     # you can also write this with ifelse statement like this
     # if employed == True and vacation == False:
@@ -10,6 +11,7 @@ def set_alarm(employed, vacation):
     #     return False
     #
     return employed and not vacation
+
 
 # for js is like this
 # function test(em, vac){
