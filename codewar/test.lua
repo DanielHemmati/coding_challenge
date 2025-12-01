@@ -3,3 +3,7 @@ local function hello()
 end
 
 print(hello())
+
+
+
+print(hello())

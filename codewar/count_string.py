@@ -3,6 +3,7 @@
 
 def count(string: str) -> dict:
     res = {}
+
     for char in string:
         res[char] = string.count(char)
     return res
