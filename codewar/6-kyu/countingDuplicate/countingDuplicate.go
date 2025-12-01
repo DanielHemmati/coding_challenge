@@ -31,7 +31,9 @@ func duplicateCount(s1 string) int {
 func main() {
 	res := duplicateCount(b)
 	fmt.Println(res)
+
 	fmt.Println("------")
+
 	aa := smart(b)
 	fmt.Println("smart: ", aa)
 }
