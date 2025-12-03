@@ -13,14 +13,14 @@ func disemvowel(comment string) string {
 		'A': true, 'E': true, 'I': true, 'O': true, 'U': true,
 	}
 
-	result := []rune{}
+	emptyString := []rune{}
 	for _, c := range comment {
 		if !vowels[c] {
-			result = append(result, c)
+			emptyString = append(emptyString, c)
 		}
 	}
 
-	return string(result)
+	return string(emptyString)
 }
 
 func usingRegex(comment string) string {

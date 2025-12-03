@@ -19,12 +19,12 @@ func main() {
 // other solution
 
 func solution2(word string) string {
-	var result = ""
+	var emptyString = ""
 	for _, c := range word {
 		fmt.Println(string(c))
-		result = string(c) + result
-		fmt.Println(result)
+		emptyString = string(c) + emptyString
+		fmt.Println(emptyString)
 	}
-	// fmt.Println(result)
-	return result
+	// fmt.Println(emptyString)
+	return emptyString
 }
