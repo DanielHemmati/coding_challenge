@@ -58,12 +58,16 @@ func ToCamelCase(s string) string {
 func main() {
 	a := "the-stealth-warrior"
 	b := "The_Stealth_Warrior"
+	d := "the--stealth"
 	fmt.Println(ToCamelCase(a))
 	fmt.Println(ToCamelCase(b))
 
-	res := regexp.MustCompile("-|_").Split(a, -1)
-	fmt.Println(res)
+	fmt.Println(second(d))
 }
 
-// solutios
-// other solution were using strings.title which is deprecated
+// solutions
+func second(s string) string {
+	return regexp.MustCompile("-|_").ReplaceAllStringFunc(s, func(w string) string {
+		return strings.ToUpper(w[1:])
+	})
+}
