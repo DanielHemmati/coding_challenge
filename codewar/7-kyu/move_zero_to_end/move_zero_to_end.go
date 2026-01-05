@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 // that's really cool
+
 func MoveZeros(arr []int) []int {
 	writeIndex := 0
 	for i := range arr {
