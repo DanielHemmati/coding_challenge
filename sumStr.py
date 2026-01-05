@@ -5,13 +5,13 @@ def sum_str(a: str, b: str):
     # return str(int(float(a)) + int(float(b)))
     # this is how everybody else solve it
     """
-        Python's or and and are short-circuiting, meaning:
+    Python's or and and are short-circuiting, meaning:
 
-        or will not evaluate the second operand if the first is truthy.
-        and will not evaluate the second operand if the first is falsey.
+    or will not evaluate the second operand if the first is truthy.
+    and will not evaluate the second operand if the first is falsey.
 
-        '' or 0 will always return 0.
-        'non-empty-string' or 0 will always return the string.
+    '' or 0 will always return 0.
+    'non-empty-string' or 0 will always return the string.
     """
     return str(int(a or 0) + int(b or 0))  # see below for more information
 
