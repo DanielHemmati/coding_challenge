@@ -10,21 +10,16 @@ func Solution(word string) string {
 	return string(runes)
 }
 
+func coolestReverse(word string) string {
+	result := ""
+	for _, c := range word {
+		result = string(c) + result
+	}
+	return result
+}
+
 // https://www.codewars.com/kata/5168bb5dfe9a00b126000018/train/go
 func main() {
 	// Solution("daniel")
-	solution2("daniel")
-}
-
-// other solution
-
-func solution2(word string) string {
-	var emptyString = ""
-	for _, c := range word {
-		fmt.Println(string(c))
-		emptyString = string(c) + emptyString
-		fmt.Println(emptyString)
-	}
-	// fmt.Println(emptyString)
-	return emptyString
+	fmt.Println(coolestReverse("daniel"))
 }
