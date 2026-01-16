@@ -27,7 +27,6 @@ func main() {
 	// fmt.Println(secondSol("abracadabra"))
 	// exampleStringsCount()
 	fmt.Println(usingRegex("abracadabra"))
-
 }
 
 // solutions
@@ -56,4 +55,14 @@ func usingRegex(str string) int {
 	r := regexp.MustCompile("[aeiou]")
 	vowels := r.FindAllString(str, -1)
 	return len(vowels)
+}
+
+func thirdSolutino(str string) (count int) {
+	for _, c := range str {
+		switch c {
+		case 'a', 'e', 'i', 'o', 'u':
+			count++
+		}
+	}
+	return count
 }
