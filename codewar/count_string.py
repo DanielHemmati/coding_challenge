@@ -1,4 +1,5 @@
 # https://www.codewars.com/kata/52efefcbcdf57161d4000091/train/python
+from collections import Counter
 
 
 def count(string: str) -> dict:
@@ -20,9 +21,6 @@ def count2(s: str) -> dict:
         else:
             res[char] = 1
     return res
-
-
-from collections import Counter
 
 
 def count3(s: str) -> dict:
