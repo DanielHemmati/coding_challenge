@@ -6,6 +6,7 @@ import (
 )
 
 // https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3/solutions/go
+
 func AbbrevName(name string) string {
 	parts := strings.Fields(name)
 	firstChar := strings.ToUpper(string(parts[0][0]))
