@@ -4,6 +4,4 @@ end
 
 print(hello())
 
-
-
 print(hello())
