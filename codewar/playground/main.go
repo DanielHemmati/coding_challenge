@@ -3,5 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("test")
+	var seen [26]bool
+	fmt.Println(seen)
 }
